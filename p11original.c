@@ -1,16 +1,15 @@
 #include<stdio.h>
-float input()
-float  add(float  p, float  q)
-void out put(float  add)
+void add(float p, float q);
+float input();
+void output(float add);
 int main()
 {
- float a ,float b;
+ float a,b,sum;
  a=input();
  b=input();
- sum=add(a,b);
+ sum = add(a,b);
  output(sum);
  return 0;
-
 }
 float input()
 {
@@ -19,13 +18,14 @@ float input()
  scanf ("%f",&A);
  return A;
 }
-float add(float p,floatq)
+float add(float p,float q)
 {
-float S
-S=P+Q;
+float S;
+S=p+q;
 return S;
 }
-void ouput(float add)
+void output(float add)
 {
-printf( "the sum of 2 numbers is=%d\n",add);
+printf( "the sum of 2 numbers is=%d\n",sum);
 }
+
