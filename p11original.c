@@ -1,31 +1,31 @@
 #include<stdio.h>
-void add(float p, float q);
 float input();
+float  add(float p, float q);
 void output(float add);
 int main()
 {
  float a,b,sum;
  a=input();
  b=input();
- sum = add(a,b);
+ sum=add(a,b);
  output(sum);
  return 0;
+
 }
 float input()
 {
- int A;
+ float A;
  printf("enter any 2 numbers\n");
  scanf ("%f",&A);
  return A;
 }
 float add(float p,float q)
 {
-float S;
-S=p+q;
-return S;
+float s;
+s=p+q;
+return s;
 }
 void output(float add)
 {
-printf( "the sum of 2 numbers is=%d\n",sum);
+printf( "the sum of 2 numbers is=%f\n",add);
 }
-
