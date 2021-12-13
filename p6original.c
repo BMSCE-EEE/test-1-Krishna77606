@@ -26,8 +26,3 @@ void output(int*a,int*b,int*sum)
   printf("sum=%d",*sum);
 
 }
-
-
-
-
-
