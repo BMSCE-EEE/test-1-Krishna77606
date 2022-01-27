@@ -1,4 +1,4 @@
-#incude<stdio.h>
+#include<stdio.h>
 int input_array_size();
 int input_array(int n,int a[n]);
 int sum_n_array(int n,int a[n]);
@@ -9,6 +9,7 @@ int main()
   n=input_array_size();
   int a[n];
   input_array(n,a);
+  add=sum_n_array(n,a);
   output(add);
   return 0;
   }
@@ -16,18 +17,30 @@ int main()
   {
     int n;
     printf("number of elements are");
-    scanf("%d",&n);
+    scanf("%d" ,&n);
     return n;
   }
-  int input_array(int n,a[n])
+  int input_array(int n,int a[n])
   {
     int i;
-    for(i=0;i<n;i++)
-    sum=sum+a[i];
+    for (i=0;i<n;i++)
+    {  
+    scanf ("%d",&a[i] );
+
+    }
+  }
+  int sum_n_array(int n,int a[n])
+  {
+   int i,sum=0;
+   for(i=0;i<n;i++)
+   { 
+   sum=sum+a[i];
     return sum;
     }
+  }
   int output(int add)
   {
-    printf("Sum is %d",add)
+    printf("Sum is %d",add);
 
   }
+  
