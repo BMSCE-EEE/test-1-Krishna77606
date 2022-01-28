@@ -8,22 +8,24 @@ int main()
   x=input();
   sr=m_sqrt(x);
   output(x,sr);
-  return  0
+  return  0;
   }
 float input()
 {
   float y;
   printf("enter a number\n");
-  return y;
   scanf(%f,&y);
+  return y;
 }
 float m_sqrt(float n)
 {
   float y=1,x=n;
-  float e=0.000001
+  float e=0.000001;
+
   while(x-y>e)
-  {x=(x+y)/2;
-  y=n/x;
+  {
+    x=(x+y)/2;
+    y=n/x;
   }
   return x;
 }
