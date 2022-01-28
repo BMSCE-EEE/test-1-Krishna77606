@@ -1,12 +1,12 @@
 #include<stdio.h>
 float input();
-float m_sqrt(float n);
+float my_sqrt(float n);
 void output(float n, float squareroot_result);
 int main()
 {
   float x,sr;
   x=input();
-  sr=m_sqrt(x);
+  sr=my_sqrt(x);
   output(x,sr);
   return  0;
   }
@@ -14,10 +14,10 @@ float input()
 {
   float y;
   printf("enter a number\n");
-  scanf(%f,&y);
+  scanf("%f",&y);
   return y;
 }
-float m_sqrt(float n)
+float my_sqrt(float n)
 {
   float y=1,x=n;
   float e=0.000001;
