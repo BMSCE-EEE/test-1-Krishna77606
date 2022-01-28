@@ -1,5 +1,5 @@
 #include <stdio.h>
-#define MAX_SIZE 100 
+#define MAX_SIZE 100
 int compare(char * str1, char * str2);
 
 int main()
