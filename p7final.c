@@ -1,8 +1,8 @@
 #include<stdio.h>
 int input_array_size();
-int input_array(int n,int a[n]);
+void input_array(int n,int a[n]);
 int sum_n_array(int n,int a[n]);
-int output(int add);
+void output(int add);
 int main()
 {
   int n,add;
@@ -20,7 +20,7 @@ int main()
     scanf("%d" ,&n);
     return n;
   }
-  int input_array(int n,int a[n])
+  void input_array(int n,int a[n])
   {
     int i;
     for (i=0;i<n;i++)
@@ -38,7 +38,7 @@ int main()
     return sum;
     }
   }
-  int output(int add)
+  void output(int add)
   {
     printf("Sum is %d",add);
 
