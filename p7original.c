@@ -40,6 +40,6 @@ int main()
   }
   int output(int add)
   {
-    printf("Sum is %d",add);
+    printf("Sum is %d", add);
   }
   
